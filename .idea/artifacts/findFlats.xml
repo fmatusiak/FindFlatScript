@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="findFlats">
+    <output-path>$PROJECT_DIR$/../../find-flat-script/out/artifacts/findFlats</output-path>
+    <root id="archive" name="findFlats.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
