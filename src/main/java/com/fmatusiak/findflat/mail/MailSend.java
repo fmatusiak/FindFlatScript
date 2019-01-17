@@ -1,4 +1,4 @@
-package com.fmatusiak.findflat;
+package com.fmatusiak.findflat.mail;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;

@@ -1,4 +1,4 @@
-package com.fmatusiak.findflat;
+package com.fmatusiak.findflat.site;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -7,7 +7,6 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 public class ParseHtml {
 

@@ -1,4 +1,4 @@
-package com.fmatusiak.findflat;
+package com.fmatusiak.findflat.result;
 
 import java.util.ArrayList;
 

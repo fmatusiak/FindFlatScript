@@ -1,7 +1,8 @@
-package com.fmatusiak.findflat;
+package com.fmatusiak.findflat.file;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 public class File {
 
@@ -11,8 +12,11 @@ public class File {
         printWriter = new PrintWriter(fileName);
     }
 
-    public boolean addTextToFile(String text) {
-        printWriter.println(text);
+    public boolean addArrayTextToFile(ArrayList<String> urlList) {
+
+        for(String url : urlList){
+            printWriter.println(url);
+        }
         printWriter.close();
         return true;
     }
