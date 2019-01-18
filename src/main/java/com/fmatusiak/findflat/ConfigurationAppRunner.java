@@ -20,28 +20,33 @@ public class ConfigurationAppRunner {
         System.out.println("<------- Configuration Script FindFlats -------> ");
         System.out.println("------------------------------------------------");
         System.out.println("-----------------EMAIL CONFIGURATION------------");
-        System.out.println("Email adress: ");
+
+        System.out.print("Email adress: ");
         String emailAddress = scanner.next();
-        System.out.println("Email password: ");
+
+        System.out.print("Email password: ");
         String emailPassword = scanner.next();
-        System.out.println("Choose website");
+
+        System.out.print("Choose website (portel or olx) : ");
         String websiteName = scanner.next();
+
         System.out.println("------------------------------------------------");
         System.out.println("-----------------FLATS CONFIGURATION------------");
         System.out.println("------------------------------------------------");
-        System.out.println("City: ");
+
+        System.out.print("City: ");
         String city = scanner.next();
 
-        System.out.println("Price from: ");
+        System.out.print("Price from: ");
         String priceFrom = scanner.next();
 
-        System.out.println("Price to: ");
+        System.out.print("Price to: ");
         String priceTo = scanner.next();
 
-        System.out.println("How rooms from: ");
+        System.out.print("How rooms from: ");
         String howFromRooms = scanner.next();
 
-        System.out.println("How rooms to: ");
+        System.out.print("How rooms to: ");
         String howToRooms = scanner.next();
 
         System.out.println("Ok , it's all . Run Application FindFlats");

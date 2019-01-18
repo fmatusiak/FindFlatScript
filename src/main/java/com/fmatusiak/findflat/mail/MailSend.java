@@ -22,9 +22,6 @@ public class MailSend {
 
     public void sendResultsUrlToMail(String fileNameFlatsUrl) {
 
-        SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        LocalDate localDate = LocalDate.now();
-
         try {
             Session session = getSessionMail(mailConfig.getUsername(), mailConfig.getPassword(), mailConfig.getConfigurationPropertiesMail());
 
