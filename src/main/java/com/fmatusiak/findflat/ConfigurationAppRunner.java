@@ -9,7 +9,12 @@ public class ConfigurationAppRunner {
     private static final String MAIL_CONFIGURATION = "mailConfig";
     private static final String FIND_FLATS_CONFIGURATION = "flatsConfig";
 
-    public void configuration(){
+    public static void main(String[] args) {
+        ConfigurationAppRunner configurationAppRunner = new ConfigurationAppRunner();
+        configurationAppRunner.configuration();
+    }
+
+    public void configuration() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("<------- Configuration Script FindFlats -------> ");
@@ -49,11 +54,5 @@ public class ConfigurationAppRunner {
 
         configureApplication.saveConfigurationFile(MAIL_CONFIGURATION, configureApplication.setAccountMail(mailConfig));
         configureApplication.saveConfigurationFile(FIND_FLATS_CONFIGURATION, configureApplication.setFindFlats(city, priceFrom, priceTo, howFromRooms, howToRooms));
-    }
-
-    public static void main(String[] args) {
-    ConfigurationAppRunner configurationAppRunner = new ConfigurationAppRunner();
-    configurationAppRunner.configuration();
-
     }
 }
