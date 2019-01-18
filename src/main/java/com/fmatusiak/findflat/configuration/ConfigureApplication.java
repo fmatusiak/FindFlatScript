@@ -17,7 +17,8 @@ public class ConfigureApplication {
         return mailConfigList;
     }
 
-    public ArrayList setFindFlats(String websiteName, String city, String priceFrom, String priceTo, String howFromRooms, String howToRooms) {
+    public ArrayList setFindFlats(String websiteName, String city, String priceFrom,
+                                  String priceTo, String howFromRooms, String howToRooms) {
         ArrayList<String> flatsConfigList = new ArrayList<>();
         flatsConfigList.add(websiteName);
         flatsConfigList.add(city);

@@ -36,11 +36,11 @@ public class FindFlatRunner {
         String emailPassword = readConfigurationMail.get(1);
 
         GeneratorUrl generatorUrl = new GeneratorUrl();
-        String url = generatorUrl.getUrlSitePortel(city, priceFrom, priceTo, howFromRooms, howToRooms);
+        String url = generatorUrl.getUrlSitePortel(city, priceFrom, priceTo,
+                howFromRooms, howToRooms);
 
         ParseHtml parseHtml = new ParseHtml();
         ArrayList<String> listFlat = parseHtml.getFlatsUrl(websiteName, url);
-
 
         try {
             file.addArrayTextToFile(websiteName, listFlat);

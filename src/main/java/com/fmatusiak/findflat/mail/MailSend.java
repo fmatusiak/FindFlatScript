@@ -22,11 +22,13 @@ public class MailSend {
         fileNameFlatsUrl += ".txt";
 
         try {
-            Session session = getSessionMail(mailConfig.getUsername(), mailConfig.getPassword(), mailConfig.getConfigurationPropertiesMail());
+            Session session = getSessionMail(mailConfig.getUsername(), mailConfig.getPassword(),
+                    mailConfig.getConfigurationPropertiesMail());
 
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(mailConfig.getUsername()));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(mailConfig.getUsername()));
+            message.setRecipients(Message.RecipientType.TO,
+                    InternetAddress.parse(mailConfig.getUsername()));
             message.setSubject("APPLICATIONS FIND FLATS");
             message.setText("");
             Multipart multipart = new MimeMultipart();
