@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde40ae0-1f2e-4b30-938b-bf373ea498bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigurationAppRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flatsConfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailConfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/FindFlatRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/FindFlatRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/GeneratorUrl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/MailConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/MailSend$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/MailSend.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/ParseHtml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/configuration/ConfigureApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/configuration/ConfigureApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/file/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/file/File.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/mail/MailSend$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/mail/MailSend$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/mail/MailSend.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/mail/MailSend.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/site/ParseHtml.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/fmatusiak/findflat/site/ParseHtml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portel.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/FindFlatRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/FindFlatRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/file/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/file/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/ParseHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/ParseHtml.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -35,17 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/file/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="195">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/FindFlatRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="525">
+              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/ParseHtml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="109">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="574">
+              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigurationAppRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="90">
+              <caret line="9" column="73" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,10 +115,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1998#2200#0" expanded="true" />
+                <element signature="e#2199#2200#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,14 +162,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/MailSend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/File.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailConfigure.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/ConfigureApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigureApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigurationApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigurationAppRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/ParseHtml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/file/File.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/FindFlatRunner.java" />
       </list>
     </option>
@@ -254,7 +263,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547768100418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547770350651" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -280,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FindFlatRunner">
     <configuration name="ConfigurationAppRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fmatusiak.findflat.ConfigurationAppRunner" />
       <module name="com.fmatusiak.find-flat-script.main" />
@@ -328,8 +337,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigurationAppRunner" />
         <item itemvalue="Application.FindFlatRunner" />
+        <item itemvalue="Application.ConfigurationAppRunner" />
         <item itemvalue="Gradle.find-flat-script [dependencies]" />
       </list>
     </recent_temporary>
@@ -349,16 +358,15 @@
       <workItem from="1547667501854" duration="479000" />
       <workItem from="1547732922494" duration="7201000" />
       <workItem from="1547759255665" duration="86000" />
-      <workItem from="1547764700984" duration="3474000" />
+      <workItem from="1547764700984" duration="5650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16733000" />
+    <option name="totallyTimeSpent" value="18909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1007" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26307365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -430,15 +438,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/Menu.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java">
+    <entry file="file://$PROJECT_DIR$/flatsConfig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mailConfig">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/result/Result.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -447,17 +455,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/file/File.java">
+    <entry file="file://$PROJECT_DIR$/portel.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/GeneratorUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/ParseHtml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="109">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,44 +499,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/configuration/ConfigureApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigurationAppRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="90">
+          <caret line="9" column="73" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/site/GeneratorUrl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/mail/MailSend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1998#2200#0" expanded="true" />
+            <element signature="e#2199#2200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/file/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/FindFlatRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flatsConfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mailConfig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fmatusiak/findflat/ConfigurationAppRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="525">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

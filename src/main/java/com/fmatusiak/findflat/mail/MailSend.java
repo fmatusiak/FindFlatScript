@@ -20,7 +20,7 @@ public class MailSend {
         this.mailConfig = mailConfig;
     }
 
-    public void sendResultsUrlToMail(String fileNameFlatsUrl, String nameWebsite) {
+    public void sendResultsUrlToMail(String fileNameFlatsUrl) {
 
         SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         LocalDate localDate = LocalDate.now();
@@ -31,14 +31,12 @@ public class MailSend {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(mailConfig.getUsername()));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(mailConfig.getUsername()));
-            message.setSubject("Find Flats Url " + nameWebsite + formatDate.format(localDate));
+            message.setSubject("APPLICATIONS FIND FLATS");
             message.setText(" ");
-
-            MimeBodyPart messageBodyPart = new MimeBodyPart();
 
             Multipart multipart = new MimeMultipart();
 
-            messageBodyPart = new MimeBodyPart();
+            MimeBodyPart messageBodyPart = new MimeBodyPart();
             String file = fileNameFlatsUrl;
             DataSource source = new FileDataSource(file);
             messageBodyPart.setDataHandler(new DataHandler(source));

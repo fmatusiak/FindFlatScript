@@ -3,14 +3,8 @@ package com.fmatusiak.findflat.configuration;
 import com.fmatusiak.findflat.mail.MailConfig;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class ConfigureApplication {
 
@@ -35,21 +29,6 @@ public class ConfigureApplication {
         flatsConfigList.add(howToRooms);
 
         return flatsConfigList;
-    }
-
-
-    public ArrayList readConfigurationfile(String fileName) {
-        List<String> listConfiguration = new ArrayList<>();
-
-        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-            listConfiguration = stream
-                    .collect(Collectors.toList());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        listConfiguration.forEach(System.out::println);
-
-        return (ArrayList) listConfiguration;
     }
 
     public boolean saveConfigurationFile(String fileName, ArrayList<String> configurationList) {

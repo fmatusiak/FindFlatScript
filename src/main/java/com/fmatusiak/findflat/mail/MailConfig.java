@@ -8,7 +8,7 @@ public class MailConfig {
     private String password;
     private String webisteName;
 
-    public MailConfig(String username, String password,String websiteName) {
+    public MailConfig(String username, String password, String websiteName) {
         this.username = username;
         this.password = password;
         this.webisteName = websiteName;
