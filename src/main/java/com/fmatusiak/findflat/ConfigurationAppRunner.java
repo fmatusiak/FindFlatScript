@@ -57,7 +57,9 @@ public class ConfigurationAppRunner {
         ConfigureApplication configureApplication = new ConfigureApplication();
         configureApplication.setAccountMail(mailConfig);
 
-        configureApplication.saveConfigurationFile(MAIL_CONFIGURATION, configureApplication.setAccountMail(mailConfig));
-        configureApplication.saveConfigurationFile(FIND_FLATS_CONFIGURATION, configureApplication.setFindFlats(websiteName,city, priceFrom, priceTo, howFromRooms, howToRooms));
+        configureApplication.saveConfigurationFile(MAIL_CONFIGURATION,
+                configureApplication.setAccountMail(mailConfig));
+        configureApplication.saveConfigurationFile(FIND_FLATS_CONFIGURATION,
+                configureApplication.setFindFlats(websiteName, city, priceFrom, priceTo, howFromRooms, howToRooms));
     }
 }
