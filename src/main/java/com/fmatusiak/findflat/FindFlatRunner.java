@@ -25,6 +25,7 @@ public class FindFlatRunner {
         ArrayList<String> readConfigurationFlats = file.readConfigurationfile(FIND_FLATS_CONFIGURATION);
 
         String websiteName = readConfigurationFlats.get(0);
+        System.out.println(websiteName);
         String city = readConfigurationFlats.get(1);
         String priceFrom = readConfigurationFlats.get(2);
         String priceTo = readConfigurationFlats.get(3);
@@ -38,16 +39,17 @@ public class FindFlatRunner {
         String url = generatorUrl.getUrlSitePortel(city, priceFrom, priceTo, howFromRooms, howToRooms);
 
         ParseHtml parseHtml = new ParseHtml();
-        Result result = new Result();
+        ArrayList<String> listFlat = parseHtml.getFlatsUrl(websiteName, url);
+
 
         try {
-            file.addArrayTextToFile(websiteName + ".txt", parseHtml.getFlatsUrl(websiteName, url));
+            file.addArrayTextToFile(websiteName, listFlat);
         } catch (FileNotFoundException e) {
             System.out.println("Error write to file");
         }
 
         MailConfig mailConfig = new MailConfig(emailName, emailPassword);
         MailSend mailSend = new MailSend(mailConfig);
-        mailSend.sendResultsUrlToMail(readConfigurationFlats.get(0));
+        mailSend.sendResultsUrlToMail(websiteName);
     }
 }

@@ -12,8 +12,8 @@ import java.util.stream.Stream;
 
 public class File {
 
-
     public boolean addArrayTextToFile(String fileName, ArrayList<String> urlList) throws FileNotFoundException {
+        fileName+=".txt";
         PrintWriter printWriter = new PrintWriter(fileName);
 
         for(String url : urlList){
@@ -33,7 +33,6 @@ public class File {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        listConfiguration.forEach(System.out::println);
 
         return (ArrayList) listConfiguration;
     }

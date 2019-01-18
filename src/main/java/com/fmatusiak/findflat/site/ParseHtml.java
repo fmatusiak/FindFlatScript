@@ -11,7 +11,6 @@ import java.util.ArrayList;
 public class ParseHtml {
 
     public ArrayList<String> getFlatsUrl(String fromPortalName, String url) {
-
         ArrayList<String> flatUrlList = new ArrayList<>();
         Document doc = null;
 

@@ -8,8 +8,6 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Properties;
 
 public class MailSend {
@@ -21,6 +19,7 @@ public class MailSend {
     }
 
     public void sendResultsUrlToMail(String fileNameFlatsUrl) {
+        fileNameFlatsUrl += ".txt";
 
         try {
             Session session = getSessionMail(mailConfig.getUsername(), mailConfig.getPassword(), mailConfig.getConfigurationPropertiesMail());
@@ -29,13 +28,11 @@ public class MailSend {
             message.setFrom(new InternetAddress(mailConfig.getUsername()));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(mailConfig.getUsername()));
             message.setSubject("APPLICATIONS FIND FLATS");
-            message.setText(" ");
-
+            message.setText("");
             Multipart multipart = new MimeMultipart();
 
             MimeBodyPart messageBodyPart = new MimeBodyPart();
-            String file = fileNameFlatsUrl;
-            DataSource source = new FileDataSource(file);
+            DataSource source = new FileDataSource(fileNameFlatsUrl);
             messageBodyPart.setDataHandler(new DataHandler(source));
             multipart.addBodyPart(messageBodyPart);
 
@@ -46,7 +43,7 @@ public class MailSend {
             System.out.println("Sended to :" + mailConfig.getUsername());
 
         } catch (MessagingException e) {
-            e.printStackTrace();
+            System.out.println("Dont send email with file");
         }
     }
 
