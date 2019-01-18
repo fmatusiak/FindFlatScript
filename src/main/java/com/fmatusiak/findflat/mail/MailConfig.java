@@ -6,12 +6,10 @@ public class MailConfig {
 
     private String username;
     private String password;
-    private String webisteName;
 
-    public MailConfig(String username, String password, String websiteName) {
+    public MailConfig(String username, String password) {
         this.username = username;
         this.password = password;
-        this.webisteName = websiteName;
     }
 
     public String getUsername() {
@@ -20,10 +18,6 @@ public class MailConfig {
 
     public String getPassword() {
         return password;
-    }
-
-    public String getWebisteName() {
-        return webisteName;
     }
 
     public Properties getConfigurationPropertiesMail() {

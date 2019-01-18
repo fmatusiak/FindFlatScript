@@ -11,17 +11,15 @@ public class ConfigureApplication {
 
     public ArrayList setAccountMail(MailConfig mailConfig) {
         ArrayList<String> mailConfigList = new ArrayList<>();
-
         mailConfigList.add(mailConfig.getUsername());
         mailConfigList.add(mailConfig.getPassword());
-        mailConfigList.add(mailConfig.getWebisteName());
 
         return mailConfigList;
     }
 
-    public ArrayList setFindFlats(String city, String priceFrom, String priceTo, String howFromRooms, String howToRooms) {
+    public ArrayList setFindFlats(String websiteName, String city, String priceFrom, String priceTo, String howFromRooms, String howToRooms) {
         ArrayList<String> flatsConfigList = new ArrayList<>();
-
+        flatsConfigList.add(websiteName);
         flatsConfigList.add(city);
         flatsConfigList.add(priceFrom);
         flatsConfigList.add(priceTo);
@@ -32,7 +30,6 @@ public class ConfigureApplication {
     }
 
     public boolean saveConfigurationFile(String fileName, ArrayList<String> configurationList) {
-
         PrintWriter printWriter = null;
 
         try {
@@ -44,8 +41,8 @@ public class ConfigureApplication {
         for (String configName : configurationList) {
             printWriter.println(configName);
         }
-
         printWriter.close();
+
         return true;
     }
 

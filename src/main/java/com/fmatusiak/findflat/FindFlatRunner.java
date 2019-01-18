@@ -15,24 +15,39 @@ public class FindFlatRunner {
     private static final String FIND_FLATS_CONFIGURATION = "flatsConfig";
 
     public static void main(String[] args) throws FileNotFoundException {
+        FindFlatRunner findFlatRunner = new FindFlatRunner();
+        findFlatRunner.run();
+    }
+
+    private void run() {
         File file = new File();
         ArrayList<String> readConfigurationMail = file.readConfigurationfile(MAIL_CONFIGURATION);
         ArrayList<String> readConfigurationFlats = file.readConfigurationfile(FIND_FLATS_CONFIGURATION);
 
-        GeneratorUrl generatorUrl = new GeneratorUrl();
+        String websiteName = readConfigurationFlats.get(0);
+        String city = readConfigurationFlats.get(1);
+        String priceFrom = readConfigurationFlats.get(2);
+        String priceTo = readConfigurationFlats.get(3);
+        String howFromRooms = readConfigurationFlats.get(4);
+        String howToRooms = readConfigurationFlats.get(5);
 
-        String url = generatorUrl.getUrlSitePortel(readConfigurationFlats.get(0), readConfigurationFlats.get(1),
-                readConfigurationFlats.get(2), readConfigurationFlats.get(3), readConfigurationFlats.get(4));
+        String emailName = readConfigurationMail.get(0);
+        String emailPassword = readConfigurationMail.get(1);
+
+        GeneratorUrl generatorUrl = new GeneratorUrl();
+        String url = generatorUrl.getUrlSitePortel(city, priceFrom, priceTo, howFromRooms, howToRooms);
 
         ParseHtml parseHtml = new ParseHtml();
-
         Result result = new Result();
 
-        file.addArrayTextToFile("portel.txt", parseHtml.getFlatsUrl(readConfigurationMail.get(2), url));
+        try {
+            file.addArrayTextToFile(websiteName + ".txt", parseHtml.getFlatsUrl(websiteName, url));
+        } catch (FileNotFoundException e) {
+            System.out.println("Error write to file");
+        }
 
-        MailConfig mailConfig = new MailConfig(readConfigurationMail.get(0), readConfigurationMail.get(1), readConfigurationMail.get(2));
-
+        MailConfig mailConfig = new MailConfig(emailName, emailPassword);
         MailSend mailSend = new MailSend(mailConfig);
-        mailSend.sendResultsUrlToMail("portel.txt");
+        mailSend.sendResultsUrlToMail(readConfigurationFlats.get(0));
     }
 }

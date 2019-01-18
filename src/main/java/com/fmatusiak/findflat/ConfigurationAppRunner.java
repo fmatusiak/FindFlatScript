@@ -27,12 +27,12 @@ public class ConfigurationAppRunner {
         System.out.print("Email password: ");
         String emailPassword = scanner.next();
 
-        System.out.print("Choose website (portel or olx) : ");
-        String websiteName = scanner.next();
-
         System.out.println("------------------------------------------------");
         System.out.println("-----------------FLATS CONFIGURATION------------");
         System.out.println("------------------------------------------------");
+
+        System.out.print("Choose website (portel or olx) : ");
+        String websiteName = scanner.next();
 
         System.out.print("City: ");
         String city = scanner.next();
@@ -52,12 +52,12 @@ public class ConfigurationAppRunner {
         System.out.println("Ok , it's all . Run Application FindFlats");
         System.out.println("-------------------------------------------");
 
-        MailConfig mailConfig = new MailConfig(emailAddress, emailPassword, websiteName);
+        MailConfig mailConfig = new MailConfig(emailAddress, emailPassword);
 
         ConfigureApplication configureApplication = new ConfigureApplication();
         configureApplication.setAccountMail(mailConfig);
 
         configureApplication.saveConfigurationFile(MAIL_CONFIGURATION, configureApplication.setAccountMail(mailConfig));
-        configureApplication.saveConfigurationFile(FIND_FLATS_CONFIGURATION, configureApplication.setFindFlats(city, priceFrom, priceTo, howFromRooms, howToRooms));
+        configureApplication.saveConfigurationFile(FIND_FLATS_CONFIGURATION, configureApplication.setFindFlats(websiteName,city, priceFrom, priceTo, howFromRooms, howToRooms));
     }
 }
