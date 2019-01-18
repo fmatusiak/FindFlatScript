@@ -14,7 +14,7 @@ public class ConfigurationAppRunner {
         configurationAppRunner.configuration();
     }
 
-    public void configuration() {
+    private void configuration() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("<------- Configuration Script FindFlats -------> ");
