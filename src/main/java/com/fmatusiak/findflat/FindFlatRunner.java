@@ -25,7 +25,6 @@ public class FindFlatRunner {
         ArrayList<String> readConfigurationFlats = file.readConfigurationfile(FIND_FLATS_CONFIGURATION);
 
         String websiteName = readConfigurationFlats.get(0);
-        System.out.println(websiteName);
         String city = readConfigurationFlats.get(1);
         String priceFrom = readConfigurationFlats.get(2);
         String priceTo = readConfigurationFlats.get(3);
