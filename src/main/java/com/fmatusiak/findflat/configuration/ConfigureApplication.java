@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public class ConfigureApplication {
 
-
     public ArrayList setAccountMail(MailConfig mailConfig) {
         ArrayList<String> mailConfigList = new ArrayList<>();
         mailConfigList.add(mailConfig.getUsername());

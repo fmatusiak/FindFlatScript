@@ -3,7 +3,6 @@ package com.fmatusiak.findflat;
 import com.fmatusiak.findflat.file.File;
 import com.fmatusiak.findflat.mail.MailConfig;
 import com.fmatusiak.findflat.mail.MailSend;
-import com.fmatusiak.findflat.result.Result;
 import com.fmatusiak.findflat.site.GeneratorUrl;
 import com.fmatusiak.findflat.site.ParseHtml;
 
@@ -14,7 +13,7 @@ public class FindFlatRunner {
     private static final String MAIL_CONFIGURATION = "mailConfig";
     private static final String FIND_FLATS_CONFIGURATION = "flatsConfig";
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         FindFlatRunner findFlatRunner = new FindFlatRunner();
         findFlatRunner.run();
     }
