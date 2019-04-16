@@ -20,7 +20,6 @@ public class MailSend {
 
     public void sendResultsUrlToMail(String fileNameFlatsUrl) {
         fileNameFlatsUrl += ".txt";
-
         try {
             Session session = getSessionMail(mailConfig.getUsername(), mailConfig.getPassword(),
                     mailConfig.getConfigurationPropertiesMail());
@@ -29,17 +28,15 @@ public class MailSend {
             message.setFrom(new InternetAddress(mailConfig.getUsername()));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(mailConfig.getUsername()));
+
             message.setSubject("APPLICATIONS FIND FLATS");
             message.setText("");
             Multipart multipart = new MimeMultipart();
-
             MimeBodyPart messageBodyPart = new MimeBodyPart();
             DataSource source = new FileDataSource(fileNameFlatsUrl);
             messageBodyPart.setDataHandler(new DataHandler(source));
             multipart.addBodyPart(messageBodyPart);
-
             message.setContent(multipart);
-
             Transport.send(message);
 
             System.out.println("Sended to :" + mailConfig.getUsername());

@@ -12,7 +12,6 @@ public class ConfigureApplication {
         ArrayList<String> mailConfigList = new ArrayList<>();
         mailConfigList.add(mailConfig.getUsername());
         mailConfigList.add(mailConfig.getPassword());
-
         return mailConfigList;
     }
 
@@ -25,7 +24,6 @@ public class ConfigureApplication {
         flatsConfigList.add(priceTo);
         flatsConfigList.add(howFromRooms);
         flatsConfigList.add(howToRooms);
-
         return flatsConfigList;
     }
 
@@ -42,7 +40,6 @@ public class ConfigureApplication {
             printWriter.println(configName);
         }
         printWriter.close();
-
         return true;
     }
 

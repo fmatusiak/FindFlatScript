@@ -12,14 +12,6 @@ public class MailConfig {
         this.password = password;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
     public Properties getConfigurationPropertiesMail() {
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", true);
@@ -29,5 +21,11 @@ public class MailConfig {
         return properties;
     }
 
+    public String getUsername() {
+        return username;
+    }
 
+    public String getPassword() {
+        return password;
+    }
 }

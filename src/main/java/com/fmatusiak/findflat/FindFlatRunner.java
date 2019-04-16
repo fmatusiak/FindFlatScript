@@ -45,7 +45,6 @@ public class FindFlatRunner {
         } catch (FileNotFoundException e) {
             System.out.println("Error write to file");
         }
-
         MailConfig mailConfig = new MailConfig(emailName, emailPassword);
         MailSend mailSend = new MailSend(mailConfig);
         mailSend.sendResultsUrlToMail(websiteName);

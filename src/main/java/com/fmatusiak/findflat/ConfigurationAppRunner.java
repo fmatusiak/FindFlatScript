@@ -16,7 +16,6 @@ public class ConfigurationAppRunner {
 
     private void configuration() {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("<------- Configuration Script FindFlats -------> ");
         System.out.println("------------------------------------------------");
         System.out.println("-----------------EMAIL CONFIGURATION------------");
@@ -53,7 +52,6 @@ public class ConfigurationAppRunner {
         System.out.println("-------------------------------------------");
 
         MailConfig mailConfig = new MailConfig(emailAddress, emailPassword);
-
         ConfigureApplication configureApplication = new ConfigureApplication();
         configureApplication.setAccountMail(mailConfig);
 
